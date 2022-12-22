@@ -1,6 +1,3 @@
-﻿// dice.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
-
 #include <iostream>
 #include <string>
 using namespace std;
@@ -8,7 +5,6 @@ using namespace std;
 void dice(string param) {
     string getNum="";
 
-    //cout << "param" <<  param << endl;
     int diceCount=1;
     int diceFaces=0;
     int diceAdditor=0;
@@ -33,7 +29,6 @@ void dice(string param) {
                 int newValue;
                 newValue = rand() % diceFaces+1;
                 result += newValue;
-                //cout << "dice #" << i << " =" << newValue << endl;
             }
             result += diceAdditor;
             if (diceCount == 1) {
@@ -54,10 +49,8 @@ void dice(string param) {
                 int newValue;
                 newValue = rand() % diceFaces + 1;
                 result += newValue;
-              //  cout << "dice #" << i << " =" << newValue << endl;
             }
             result += diceAdditor;
-            //cout << "dice " << diceCount << "d" << diceFaces<<"+"<< diceAdditor << " result " << result << endl;
 
             if (diceCount == 1) {
                 cout << "dice d" << diceFaces << "+" << diceAdditor << " --> " << result << endl;
